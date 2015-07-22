@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class Instructor::CoursesControllerTest < ActionController::TestCase
+  
   test "create button creates a new course in database" do
     user = FactoryGirl.create(:user)
     sign_in user
@@ -19,4 +20,5 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
     #assert_equal user, c.user
     assert_equal 1, user.courses.count
   end
+
 end
