@@ -30,6 +30,10 @@ gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'devise'
 
+gem 'simple_form'
+
+gem "factory_girl_rails", "~> 4.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
