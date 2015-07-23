@@ -12,9 +12,17 @@
       <% @course.sections.each do |section| %>
         <li>
           <%= section.title %>
+          <%= link_to "New Lesson", new_instructor_section_lesson_path(section), :class => "pull-right btn btn-primary btn-xs" %>
+          <ol>
+            <% section.lessons.each do |lesson| %>
+              <br />
+              <li><b><%= lesson.title %></b> - <%= lesson.subtitle %></li>
+            <% end %>
+          </ol>
           <div class="clr"></div>
           <br />
         </li>
+        <hr />
       <% end %>
     </ol>
   </h4>
