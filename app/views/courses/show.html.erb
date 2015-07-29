@@ -17,6 +17,21 @@
   <div class="col-sm-8 col-xs-12">
     <h3><%= @course.description %></h3>
   </div>
+  <div class="col-xs-12">
+    <% @course.sections.each do |section| %>
+      <div class="section">
+        <br />
+        <%= section.title %>
+        <% section.lessons.each do |lesson| %>
+          <div class="lesson">
+            <%= link_to lesson_path(lesson) do %>
+              <span class="tab"><b><%= lesson.title %></b> - <%= lesson.subtitle %></span>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
   <div class="clr"></div>
   <br />
 </div>
