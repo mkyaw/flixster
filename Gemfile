@@ -42,6 +42,8 @@ gem "fog", "~> 1.3.1"
 
 gem "mini_magick"
 
+gem 'carrierwave-aws'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
