@@ -9,7 +9,7 @@ class LessonsController < ApplicationController
   private
 
   def require_authorized_for_current_lesson_course
-    if current_user.enrolled_in?(current_lesson.section.course) != current_user
+    if ! current_user.enrolled_in?(current_lesson.section.course)
       redirect_to course_path(current_lesson.section.course), :alert => "Unauthorized to view the lesson content"
     end
   end
