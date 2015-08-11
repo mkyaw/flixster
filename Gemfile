@@ -46,6 +46,8 @@ gem 'carrierwave-aws'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+gem 'ranked-model'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
