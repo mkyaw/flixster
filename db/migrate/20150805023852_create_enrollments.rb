@@ -5,9 +5,9 @@ class CreateEnrollments < ActiveRecord::Migration
       t.integer :course_id
 
       t.timestamps
-
-      add_index :enrollments, [:user_id, :course_id]
-      add_index :enrollments, :course_id
     end
+
+    add_index :enrollments, :course_id
+    add_index :enrollments, [:user_id, :course_id]
   end
 end
