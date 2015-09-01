@@ -26,9 +26,7 @@ Rails.application.routes.draw do
     end
     
     resources :courses, :only => [:new, :create, :show] do
-      resources :sections, :only => [:new, :create] do
-        resources :lessons, :only => [:new, :create]
-      end
+      resources :sections, :only => [:create]
     end
   end
 
