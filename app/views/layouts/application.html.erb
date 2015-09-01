@@ -64,10 +64,49 @@
 <br class="clr" />
 
 <div id="footer">
-	<div class="container">
-		<b>Footer Here</b>
-		<br />
-		<%= link_to 'Teach a Course', new_instructor_course_path %>
+	<div class="container text-center">
+		<div class="col-xs-12 col-sm-3">
+			<b>Teachers</b>
+			<br />
+			<%= link_to 'Teach a Course', new_instructor_course_path %>
+			<br />
+			<i><%= link_to 'My Dashboard', dashboard_path %></i>
+			<br />
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<b>About</b>
+			<br />
+			<%= link_to "Team", "#" %>
+			<br />
+			<%= link_to "Careers", "#" %>
+			<br />
+			<%= link_to "Privacy Policy", "#" %>
+			<br />
+		</div>
+		<div class="col-xs-12 col-sm-3">
+			<b>Contact</b>
+			<br />	
+			myo@example.com
+			<br />
+			1 Main St
+			<br />
+			Los Angeles, CA 90034
+			<br />
+		</div>
+		<div class="col-xs-12 col-sm-3 social">
+			<b>Social</b>
+			<br />
+			<br />
+			<%= link_to "https://github.com/mkyaw", :target => "_blank" do %>
+				<%= image_tag 'gh.png', :class => 'social-button' %>
+			<% end %>
+			<%= link_to "https://www.linkedin.com/in/myotkyaw", :target => "_blank" do %>
+				<%= image_tag 'in.png', :class => 'social-button' %>
+			<% end %>
+			<%= link_to "https://www.youtube.com/watch?v=JRLTiVrr0Bo", :target => "_blank" do %>
+				<%= image_tag 'yt.png', :class => 'social-button' %>
+			<% end %>
+		</div>
 	</div>
 </div>
 

@@ -1,4 +1,4 @@
-$footerHeight: 60px;
+$footerHeight: 100px;
 
 html,
 body {
@@ -36,4 +36,26 @@ body {
 #footer a{
   color: white;
   font-weight: 100;
+}
+
+.social-button {
+  width: 32px;
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
+
+$footerHeightMobile: 310px;
+@media (max-width: 750px) {
+  #footer {
+    height:$footerHeightMobile;
+  }
+
+  #wrap {
+    margin: 0 auto -$footerHeightMobile;
+    /* iPad bottom by footer height*/
+    padding: 0 0 $footerHeightMobile;
+  }
 }
